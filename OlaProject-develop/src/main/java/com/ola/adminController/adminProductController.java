@@ -68,7 +68,7 @@ public class adminProductController {
 		String category = getCategoryName(product.getProdCategory());
 		model.addAttribute("category", category);
 		model.addAttribute("product", product);
-		return "/admin/editProduct"; // 상품을 편집하기 위한 editProduct.html 템플릿을 생성하세요.
+		return "/admin/editProduct";
 	}
 
 	private String getCategoryName(int category) {
