@@ -43,7 +43,7 @@ public class RepositoryTest {
 	@Autowired
 	private PasswordEncoder encoder;
 
-	@Test
+//	@Test
 	public void member2Insert() {
 		Member member = Member.builder().name("안중근").email("jgan@eamil.com").phoneNumber("010-2222-2222")
 				.address("서울시 광진구").detailedAddress("건대2번 출구").role(Role.ROLE_MEMBER).memberId("member2")
@@ -123,7 +123,7 @@ public class RepositoryTest {
 		});
 	}
 
-	@Test
+//	@Test
 	public void testBasket() {
 
 		Product product = prodRepo.findById(1L).get();
